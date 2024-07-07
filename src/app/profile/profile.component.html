@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <app-featured-section-carousel></app-featured-section-carousel> <!-- Featured carousel component with no max width -->
+  </div>
+  
+  <div class="container">
+    <ng-container *ngFor="let img of images">
+      <img src="{{ img.url }}" alt="{{ img.title }}" class="image">
+    </ng-container>
+  </div>
+  
+  
+  <button class="btn btn-primary mt-3" (click)="showGallery()">Show All</button>
+  
