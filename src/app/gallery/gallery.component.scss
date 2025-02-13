@@ -7,8 +7,8 @@
     margin-top: 20px;
     border-radius: 10px;
     max-height: 1220px;
-    max-height: calc(8 * 200px); /* set max-height to 8 rows plus some margin */
-    overflow: hidden; /* hide overflowing images */
+    max-height: calc(8 * 200px); 
+    overflow: hidden; 
   }
   
   .image {

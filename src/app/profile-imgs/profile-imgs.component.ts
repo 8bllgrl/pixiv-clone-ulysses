@@ -143,7 +143,7 @@ export class ProfileImgsComponent {
       title: 'Image'
     },
     {
-      url: 'https://cdn.midjourney.com/63a0f850-928c-4798-ae1a-21c03409c1cc/0_3.png',
+      url: '',
       title: 'Image'
     },
     {
