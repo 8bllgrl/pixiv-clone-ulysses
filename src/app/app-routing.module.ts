@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProfileComponent } from './profile/profile.component';
-import { GalleryComponent } from './gallery/gallery.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: ProfileComponent },
-  { path: 'gallery', component: GalleryComponent }
+  { path: 'profile/:username', component: UserProfileComponent },
+  {
+    path: '',
+    redirectTo: '/profile/default', 
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({

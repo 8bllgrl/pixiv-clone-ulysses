@@ -1,0 +1,10 @@
+<!-- takes in profile pic, descript -->
+<app-user-top-bar
+    [profilePicture]="profile.profilePicture"
+    [bannerImage]="profile.bannerImage"
+    [description]="profile.description"
+    [username]="profile.username">
+</app-user-top-bar>
+
+<!-- takes in the profile's image gallery. -->
+<app-image-gallery [photos]="profile.imageGallery"></app-image-gallery>

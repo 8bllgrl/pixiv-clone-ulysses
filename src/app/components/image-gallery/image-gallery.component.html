@@ -1,0 +1,20 @@
+<div class="gallery-wrapper">
+    <div class="filters">
+        <button *ngFor="let tag of uniqueTags" (click)="filterByTag(tag)">
+            {{ tag }}
+        </button>
+        <button (click)="clearFilter()">Clear Filter</button>
+        
+    </div>
+    <div class="photo-grid">
+        <img *ngFor="let photo of pagedPhotos" [src]="photo.url">
+        <!-- <img *ngFor="let photo of pagedPhotos" [src]="photo.url" (click)="openDialog(photo.url)"> -->
+    </div>
+    <!-- Paginator component -->
+    <mat-paginator class="paginator"
+        [length]="photos.length" 
+        [pageSize]="ITEMS_PER_PAGE" 
+        (page)="onPageChange($event)">
+    </mat-paginator>
+</div>
+

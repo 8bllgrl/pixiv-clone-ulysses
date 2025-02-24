@@ -33,7 +33,7 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "baseHref": "/pixiv-clone/"
+            "baseHref": "/pixiv-clone-ulysses/"
           },
           "configurations": {
             "production": {
